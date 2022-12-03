@@ -1,6 +1,18 @@
 ![Elastic Tabstops logo](/img/logo.gif)
 
-Notepad++ plugin for [Elastic Tabstops](http://nickgravgaard.com/elastic-tabstops/). 
+Notepad++ plugin for [Elastic Tabstops](http://nickgravgaard.com/elastic-tabstops/).
+
+New version 1.5 (for Notepad++ version higher than 8.4.4) rewritten, optimized, and providing many new features:
+* New settings architecture: default setting and individual settings.
+* New configuration file format, INI-compatible, with optional individual sections for edited files.
+* Default settings partially compatible with the old version.
+* Global remember option to remember setting option for enabled files.
+* Reset settings option to clean and reset the options INI file.
+* New, consistent behavior of elastic tab-stops using two types of working range: current selection or the whole file.
+* User choice between two computing strategy : global (same through the whole file) or local (old version behavior) tab-stops.
+* Efficient and optimized code to find and replace elastic tab-stops with spaces or spaces with tabs (selection or whole file).
+* Completely rewritten code to support new Scintilla 2GB+ interface.
+* Integrated quick help.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/github/dail8859/ElasticTabstops?branch=master&svg=true)](https://ci.appveyor.com/project/dail8859/ElasticTabstops/branch/master)
 
