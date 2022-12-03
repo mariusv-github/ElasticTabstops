@@ -1,0 +1,43 @@
+
+#include "Version.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     VERSION_NUM
+PRODUCTVERSION  VERSION_NUM
+FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+FILEFLAGS       VS_FF_SPECIALBUILD
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_DLL
+FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904b0"
+    BEGIN
+      VALUE "Comments", "Elastic Tabstops for Notepad++"
+      VALUE "CompanyName", "Justin Dailey <dail8859@yahoo.com>, Marius Vasiliu <Polytech Paris Saclay>"
+      VALUE "FileDescription", "Elastic Tabstops for Notepad++"
+      VALUE "FileVersion", VERSION_TEXT
+      VALUE "InternalName", "ElasticTabstops"
+      VALUE "LegalCopyright", "Copyright (c) Marius Vasiliu 2022"
+      VALUE "OriginalFilename", "ElasticTabstops.dll"
+      VALUE "ProductName", "ElasticTabstops"
+      VALUE "ProductVersion", VERSION_TEXT
+#ifdef UNICODE
+      VALUE "SpecialBuild", "UNICODE"
+#else
+      VALUE "SpecialBuild", "ANSI"
+#endif
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0409, 0x01B5
+  END
+END
